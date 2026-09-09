@@ -1,0 +1,155 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #d9d9d9);
+    /* Gradient background for a softer feel */
+    color: #333;
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+}
+
+.navbar a {
+    color: rgb(165, 17, 133);
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    color: rgb(116, 2, 78);
+    transform: scale(1.05);
+    /* Slight scaling on hover */
+}
+
+/* Cart section styles */
+.cart {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    /* Solid background for cart */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cart h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(192, 42, 159);
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    /* Space between cards */
+}
+
+.cart-item {
+    background: rgba(255, 255, 255, 0.7);
+    /* Light card background */
+    border-radius: 10px;
+    padding: 30px;
+    /* margin: 30px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-item h3 {
+    flex: 1;
+    margin-left: 15px;
+    color: rgb(192, 42, 159);
+    /* Text color for item name */
+}
+
+.cart-item p {
+    margin: 20px 0;
+    font-size: 15px;
+    color: #666;
+    /* Description color */
+}
+
+/* Button styles */
+.btn {
+    background-color: rgb(220, 88, 191);
+    /* Button color */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(160, 0, 107);
+    color: white;
+    /* Darker shade on hover */
+    transform: translateY(-2px);
+    /* Slight lifting effect on hover */
+}
+
+h2 {
+    text-align: right;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .cart-container {
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+        /* Stack navbar items */
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 100%;
+        /* Full width for links */
+        text-align: center;
+        margin: 5px 0;
+        /* Margin between stacked links */
+    }
+}

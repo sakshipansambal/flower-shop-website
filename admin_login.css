@@ -1,0 +1,82 @@
+/* styling.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    /* background-color: #343a40; */
+    color: rgb(165, 17, 133);
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.login {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(220, 88, 191);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(160, 0, 107);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+p.error {
+    color: red;
+    font-size: 14px;
+}

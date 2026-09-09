@@ -1,0 +1,137 @@
+/* General Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #eef2f3; /* Soft background color */
+    color: #333;
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+.header {
+    color: rgb(165, 17, 133);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+}
+
+.header h2 {
+    font-size: 28px; /* Larger font size for visibility */
+}
+
+/* Edit Product Section */
+.edit-product {
+    max-width: 600px;
+    margin: 40px auto; /* Centered with top margin */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Headings */
+.edit-product h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid rgb(165, 17, 133); /* Underline for styling */
+    padding-bottom: 10px;
+}
+
+/* Styling for Forms */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input and Textarea Styles */
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    padding: 12px;
+    margin: 15px 0; /* Spacing between elements */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transitions for better UX */
+    outline: none; /* Remove default outline */
+}
+
+/* Focus Styles */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: rgb(165, 17, 133); /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Glow effect */
+}
+
+/* File Input Style */
+form input[type="file"] {
+    margin: 15px 0;
+}
+
+/* Button Styles */
+form button {
+    background-color: rgb(165, 17, 133); /* Match header color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Transitions */
+}
+
+/* Button Hover Effect */
+form button:hover {
+    background-color: rgb(116, 2, 78); /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Paragraph and Link Styles */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center; /* Centered text */
+}
+
+p a {
+    color: rgb(165, 17, 133); /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for smooth effect */
+}
+
+/* Link Hover Effect */
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: rgb(165, 17, 133); /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .edit-product {
+        margin: 20px; /* Reduce margin on smaller screens */
+        padding: 20px;
+    }
+
+    header h2 {
+        font-size: 24px; /* Smaller title in smaller screens */
+    }
+    
+    form input[type="text"],
+    form input[type="number"],
+    form textarea {
+        font-size: 14px; /* Slightly smaller inputs */
+    }
+    
+    form button {
+        font-size: 14px; /* Adjust button size */
+    }
+}

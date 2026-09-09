@@ -1,0 +1,107 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Smooth gradient background */
+    color: #343a40; /* Dark gray text for readability */
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+.header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.header img {
+    width: 150px; /* Logo size */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    flex-wrap: wrap; /* Responsive design */
+}
+
+.navbar a {
+    color: rgb(165, 17, 133);
+    text-decoration: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    color: rgb(116, 2, 78);
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Orders Section Styles */
+.orders {
+    max-width: 900px; /* Max width for orders */
+    margin: 20px auto; /* Centering */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.orders h1 {
+    text-align: center;
+    color: rgb(192, 42, 159); /* Primary color for headings */
+    margin-bottom: 30px; /* Bigger space below heading */
+    font-size: 2.5em; /* Larger heading for emphasis */
+}
+
+/* Order Container Styles */
+.order-container {
+    display: grid; /* Using grid layout to organize orders */
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Responsive grid for orders */
+    gap: 20px; /* Gap between items */
+}
+
+/* Individual Order Card Styles */
+.order {
+    border: 1px solid #dee2e6; /* Border for separation */
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Shadow for effect */
+}
+
+.order:hover {
+    transform: translateY(-4px); /* Lift on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.order h3 {
+    color: #212529; /* Dark gray color for the title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.order p {
+    margin: 5px 0;
+    font-size: 1.1em; /* Slightly larger text */
+    color: #6c757d; /* Muted gray for the text */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Vertical stacking */
+    }
+
+    .order {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+}

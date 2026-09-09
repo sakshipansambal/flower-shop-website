@@ -1,0 +1,122 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    color: rgb(165, 17, 133);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.header nav a {
+    color: rgb(165, 17, 133);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    /* text-decoration: underline; */
+    color: rgb(116, 2, 78);
+}
+
+.product-list {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    /* background-color: #007bff; */
+    color: rgb(165, 17, 133);
+}
+
+th:hover {
+    color: rgb(116, 2, 78);
+}
+
+td img {
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color:  rgb(165, 17, 133);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(116, 2, 78);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .header nav {
+        flex-direction: column;
+    }
+    
+    .header nav a {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

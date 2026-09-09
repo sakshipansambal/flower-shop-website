@@ -1,0 +1,134 @@
+/* General Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Background */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #d9d9d9);
+    line-height: 1.6;
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cover the entire background */
+}
+
+/* Header Styles */
+.header {
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: rgb(165, 17, 133); /* White text for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 20px; /* Spacing between links */
+    font-weight: bold;
+    transition: color 0.3s; /* Transition effect */
+}
+
+.navbar a:hover {
+    color: rgb(116, 2, 78); /* Light yellow on hover */
+}
+
+/* Main About Section */
+.about {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center alignment */
+    max-width: 800px;
+    margin: 40px auto; /* Center with margin */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7); /* White background with some transparency */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Owner Profile Styles */
+.owner-profile {
+    text-align: center; /* Center text in profile */
+}
+
+/* .owner-profile img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    border: 3px solid rgb(116, 2, 78); 
+    margin-bottom: 20px;
+}
+
+.owner-profile h2 {
+    font-size: 24px; 
+    color: #333; 
+}
+
+.owner-profile p {
+    font-size: 16px; 
+    color: #666; 
+    padding: 0 10px; 
+} */
+
+/* Shop Information Styles */
+.shop-info {
+    text-align: left; /* Align text to the left */
+    margin-top: 30px; /* Spacing above shop info */
+}
+
+.shop-info h3 {
+    font-size: 22px; /* Heading size */
+    color: #333; /* Dark color for headings */
+    border-bottom: 2px solid rgb(165, 17, 133); /* Underline for headings */
+    padding-bottom: 10px;
+}
+
+.shop-info p {
+    font-size: 16px; /* Information font size */
+    margin: 10px 0; /* Spacing between paragraphs */
+    color: #444; /* Darker color for text */
+}
+
+.shop-info a {
+    color: rgb(165, 17, 133); /* Link color */
+    text-decoration: none; /* No underline for links */
+}
+
+.shop-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: rgb(116, 2, 78); /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller links */
+        margin: 0 10px; /* Reduced spacing */
+    }
+
+    .owner-profile img {
+        width: 120px; /* Smaller profile image */
+        height: 120px; /* Adjusted height */
+    }
+
+    .owner-profile h2 {
+        font-size: 20px; /* Smaller name font */
+    }
+
+    .shop-info h3 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    .shop-info p {
+        font-size: 14px; /* Smaller info paragraph */
+    }
+}

@@ -1,0 +1,152 @@
+/* General Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Soft light background color */
+    color: #333; /* Dark text for readability */
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+.header {
+    color: rgb(165, 17, 133); /* White text color */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+}
+
+.header h2 {
+    font-size: 32px; /* Larger font size */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: rgb(165, 17, 133); /* White text for links */
+    text-decoration: none; /* No underline */
+    margin: 0 15px; /* Spacing between links */
+    font-weight: bold;
+    transition: color 0.3s; /* Transition effect */
+}
+
+header nav a:hover {
+    color: rgb(116, 2, 78); /* Lighter shade on hover */
+}
+
+/* Add Product Section */
+.add-product {
+    max-width: 600px;
+    margin: 40px auto; /* Centered section with top margin */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7); /* White background for the form */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Headings */
+.add-product h1 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger heading size */
+    color: #333; /* Darker color */
+    text-align: center; /* Center the heading */
+    border-bottom: 2px solid rgb(165, 17, 133); /* Underline for aesthetics */
+    padding-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input and Textarea Styles */
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    padding: 15px; /* Padding for input fields */
+    margin: 10px 0; /* Spacing between elements */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+    outline: none; /* Remove default outline */
+}
+
+/* Focus Styles */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: rgb(165, 17, 133); /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(59, 89, 152, 0.5); /* Glow effect */
+}
+
+/* File Input Style */
+form input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+form button {
+    background-color: rgb(165, 17, 133); /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Transition for button */
+}
+
+/* Button Hover Effect */
+form button:hover {
+    background-color: rgb(116, 2, 78); /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+/* Success Message Styles */
+p {
+    margin-top: 20px; /* Top margin */
+    text-align: center; /* Centered text */
+}
+
+p a {
+    color: #3b5998; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #315b8c; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-product {
+        margin: 20px; /* Reduce margin on smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    header h2 {
+        font-size: 24px; /* Smaller title on smaller screens */
+    }
+    
+    form input[type="text"],
+    form input[type="number"],
+    form textarea {
+        font-size: 14px; /* Smaller inputs */
+        padding: 10px; /* Adjust padding */
+    }
+    
+    form button {
+        font-size: 14px; /* Adjust button size */
+    }
+}

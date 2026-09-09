@@ -1,0 +1,67 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #EAEAEA; /* Light background for the body */
+    color: #333;
+    background: url('backgroundimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px; /* Max width for the container */
+    margin: 136px auto; /* Center the container */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6); /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    color: rgb(116, 2, 78); /* Success green color */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 2em; /* Large heading size */
+}
+
+p {
+    font-size: 1.2em; /* Slightly larger text for emphasis */
+    color: #555; /* Darker gray color for text */
+    text-align: center;
+    margin: 15px 0; /* Space above and below */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block; /* Inline block for button */
+    background-color: rgb(220, 88, 191); /* Blue button color */
+    color: white; /* White text on button */
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Moderate font size */
+    text-align: center; /* Centered text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin: 20px auto; /* Center the button in block */
+    width: calc(100% - 40px); /* Full width accounting for padding */
+}
+
+.btn:hover {
+    background-color: rgb(160, 0, 107); /* Darker blue on hover */
+    color: white; 
+    transform: scale(1.05); /* Slight enlargement effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .btn {
+        width: 100%; /* Full width button on mobile */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
